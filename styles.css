@@ -268,6 +268,13 @@ nav ul li a:hover {
     color: var(--navy);
 }
 
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Events Section */
 .events {
     padding: 6rem 0;
