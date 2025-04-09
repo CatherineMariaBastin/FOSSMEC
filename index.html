@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOSSMEC - Free and Open Source Software Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FOSS<span>MEC</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Tech Blog</a></li>
+                    <li><a href="#contact" class="cta-button">Join Us</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Free and Open Source Software Community</h1>
+                <p>Building the future of technology through collaboration and open innovation.</p>
+                <div class="cta-buttons">
+                    <a href="#about" class="primary-button">Learn More</a>
+                    <a href="#contact" class="secondary-button">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About FOSSMEC</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>FOSSMEC is the Free and Open Source Software club at Model Engineering College, dedicated to promoting the philosophy and practice of open source software development. Founded by a group of enthusiastic students, FOSSMEC has grown into a vibrant community of developers, designers, and tech enthusiasts.</p>
+                    <p>Our mission is to inspire, educate, and empower students to contribute to open source projects and develop their technical skills through collaborative learning experiences. We believe in the power of community-driven innovation and knowledge sharing.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Events Organized</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Student Members</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <i class="fas fa-code fa-5x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recent Events</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="events-slider">
+                <div id="events-list" class="events-container"></div>
+                <div class="slider-controls">
+                    <button id="prev-event" class="slider-control"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-event" class="slider-control"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-container">
+                <!-- Gallery images will be added here via JavaScript -->
+            </div>
+            <div class="gallery-modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="gallery-modal-img">
+                <div class="modal-caption"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tech Blog</h2>
+                <div class="underline"></div>
+            </div>
+            <div id="blog-posts" class="blog-container"></div>
+            <div class="blog-more">
+                <a href="#" class="secondary-button">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Join FOSSMEC</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="join-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Why do you want to join?</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="primary-button">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>contact@fossmec.org</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Model Engineering College, Thrikkakara, Kochi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FOSS<span>MEC</span></h2>
+                    <p>Empowering through Open Source</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#blog">Tech Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Learning Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FOSSMEC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
