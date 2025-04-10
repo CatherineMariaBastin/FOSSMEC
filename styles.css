@@ -265,6 +265,7 @@ nav ul li a:hover {
 }
 
 .image-container img {
+    object-fit: cover;
     width: 100%; /* Use 100% instead of max-width */
     height: auto;
     display: block;
